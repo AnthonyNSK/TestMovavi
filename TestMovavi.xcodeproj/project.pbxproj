@@ -1,0 +1,433 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9233E9022348E18A00C692F6 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9233E9012348E18A00C692F6 /* TableViewController.swift */; };
+		926DDB6A2349FF2900E789E7 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926DDB692349FF2900E789E7 /* NewsTableViewCell.swift */; };
+		9274B5B92346261B008A3F63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9274B5B82346261B008A3F63 /* AppDelegate.swift */; };
+		9274B5BB2346261B008A3F63 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9274B5BA2346261B008A3F63 /* SceneDelegate.swift */; };
+		9274B5C02346261B008A3F63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9274B5BE2346261B008A3F63 /* Main.storyboard */; };
+		9274B5C22346261D008A3F63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9274B5C12346261D008A3F63 /* Assets.xcassets */; };
+		9274B5C52346261D008A3F63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9274B5C32346261D008A3F63 /* LaunchScreen.storyboard */; };
+		9274B5CE234627FC008A3F63 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9274B5CD234627FC008A3F63 /* Parser.swift */; };
+		9274B5D02346284C008A3F63 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9274B5CF2346284C008A3F63 /* Model.swift */; };
+		C923E2645574BCF2BE8C66BD /* Pods_TestMovavi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A89859F80601B6E796DF01F2 /* Pods_TestMovavi.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9233E9012348E18A00C692F6 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		926DDB692349FF2900E789E7 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
+		9274B5B52346261B008A3F63 /* TestMovavi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestMovavi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9274B5B82346261B008A3F63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9274B5BA2346261B008A3F63 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9274B5BF2346261B008A3F63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9274B5C12346261D008A3F63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9274B5C42346261D008A3F63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9274B5C62346261D008A3F63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9274B5CD234627FC008A3F63 /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		9274B5CF2346284C008A3F63 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		A89859F80601B6E796DF01F2 /* Pods_TestMovavi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestMovavi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1E3228C17ED3EF0D84D9030 /* Pods-TestMovavi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestMovavi.release.xcconfig"; path = "Target Support Files/Pods-TestMovavi/Pods-TestMovavi.release.xcconfig"; sourceTree = "<group>"; };
+		B87F3D065AD5DAAADB102B14 /* Pods-TestMovavi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestMovavi.debug.xcconfig"; path = "Target Support Files/Pods-TestMovavi/Pods-TestMovavi.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9274B5B22346261B008A3F63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C923E2645574BCF2BE8C66BD /* Pods_TestMovavi.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		356A65CD5B5A0B54F5277652 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B87F3D065AD5DAAADB102B14 /* Pods-TestMovavi.debug.xcconfig */,
+				B1E3228C17ED3EF0D84D9030 /* Pods-TestMovavi.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9274B5AC2346261B008A3F63 = {
+			isa = PBXGroup;
+			children = (
+				9274B5B72346261B008A3F63 /* TestMovavi */,
+				9274B5B62346261B008A3F63 /* Products */,
+				356A65CD5B5A0B54F5277652 /* Pods */,
+				ABEB3CFA908908E05FD0DC15 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9274B5B62346261B008A3F63 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9274B5B52346261B008A3F63 /* TestMovavi.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9274B5B72346261B008A3F63 /* TestMovavi */ = {
+			isa = PBXGroup;
+			children = (
+				9274B5CC234626E4008A3F63 /* Model */,
+				9274B5B82346261B008A3F63 /* AppDelegate.swift */,
+				9274B5BA2346261B008A3F63 /* SceneDelegate.swift */,
+				9233E9012348E18A00C692F6 /* TableViewController.swift */,
+				926DDB692349FF2900E789E7 /* NewsTableViewCell.swift */,
+				9274B5BE2346261B008A3F63 /* Main.storyboard */,
+				9274B5C12346261D008A3F63 /* Assets.xcassets */,
+				9274B5C32346261D008A3F63 /* LaunchScreen.storyboard */,
+				9274B5C62346261D008A3F63 /* Info.plist */,
+			);
+			path = TestMovavi;
+			sourceTree = "<group>";
+		};
+		9274B5CC234626E4008A3F63 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9274B5CD234627FC008A3F63 /* Parser.swift */,
+				9274B5CF2346284C008A3F63 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ABEB3CFA908908E05FD0DC15 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A89859F80601B6E796DF01F2 /* Pods_TestMovavi.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9274B5B42346261B008A3F63 /* TestMovavi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9274B5C92346261D008A3F63 /* Build configuration list for PBXNativeTarget "TestMovavi" */;
+			buildPhases = (
+				711DD084F0D17EC1A4EA954E /* [CP] Check Pods Manifest.lock */,
+				9274B5B12346261B008A3F63 /* Sources */,
+				9274B5B22346261B008A3F63 /* Frameworks */,
+				9274B5B32346261B008A3F63 /* Resources */,
+				7D27D96BFAC847A8B1F066B9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestMovavi;
+			productName = TestMovavi;
+			productReference = 9274B5B52346261B008A3F63 /* TestMovavi.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9274B5AD2346261B008A3F63 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = user154783;
+				TargetAttributes = {
+					9274B5B42346261B008A3F63 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+				};
+			};
+			buildConfigurationList = 9274B5B02346261B008A3F63 /* Build configuration list for PBXProject "TestMovavi" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9274B5AC2346261B008A3F63;
+			productRefGroup = 9274B5B62346261B008A3F63 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9274B5B42346261B008A3F63 /* TestMovavi */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9274B5B32346261B008A3F63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9274B5C52346261D008A3F63 /* LaunchScreen.storyboard in Resources */,
+				9274B5C22346261D008A3F63 /* Assets.xcassets in Resources */,
+				9274B5C02346261B008A3F63 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		711DD084F0D17EC1A4EA954E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestMovavi-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D27D96BFAC847A8B1F066B9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestMovavi/Pods-TestMovavi-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestMovavi/Pods-TestMovavi-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TestMovavi/Pods-TestMovavi-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9274B5B12346261B008A3F63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9274B5D02346284C008A3F63 /* Model.swift in Sources */,
+				9274B5CE234627FC008A3F63 /* Parser.swift in Sources */,
+				926DDB6A2349FF2900E789E7 /* NewsTableViewCell.swift in Sources */,
+				9274B5B92346261B008A3F63 /* AppDelegate.swift in Sources */,
+				9233E9022348E18A00C692F6 /* TableViewController.swift in Sources */,
+				9274B5BB2346261B008A3F63 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9274B5BE2346261B008A3F63 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9274B5BF2346261B008A3F63 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9274B5C32346261D008A3F63 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9274B5C42346261D008A3F63 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9274B5C72346261D008A3F63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9274B5C82346261D008A3F63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9274B5CA2346261D008A3F63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B87F3D065AD5DAAADB102B14 /* Pods-TestMovavi.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 79ULK5BQH7;
+				INFOPLIST_FILE = TestMovavi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Anthony.TestMovavi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9274B5CB2346261D008A3F63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1E3228C17ED3EF0D84D9030 /* Pods-TestMovavi.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 79ULK5BQH7;
+				INFOPLIST_FILE = TestMovavi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Anthony.TestMovavi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9274B5B02346261B008A3F63 /* Build configuration list for PBXProject "TestMovavi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9274B5C72346261D008A3F63 /* Debug */,
+				9274B5C82346261D008A3F63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9274B5C92346261D008A3F63 /* Build configuration list for PBXNativeTarget "TestMovavi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9274B5CA2346261D008A3F63 /* Debug */,
+				9274B5CB2346261D008A3F63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9274B5AD2346261B008A3F63 /* Project object */;
+}
